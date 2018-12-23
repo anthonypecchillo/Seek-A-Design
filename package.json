@@ -1,0 +1,35 @@
+{
+  "name": "seek-a-design",
+  "version": "1.0.0",
+  "description": "A graphic design business portfolio website",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonypecchillo/Seek-A-Design.git"
+  },
+  "author": "Anthony Pecchillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonypecchillo/Seek-A-Design/issues"
+  },
+  "homepage": "https://github.com/anthonypecchillo/Seek-A-Design#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
