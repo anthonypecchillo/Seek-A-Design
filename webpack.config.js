@@ -4,7 +4,7 @@ var DIST_DIR = path.join(__dirname, '/client/dist');
 
 module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
-  devtool: "source-map",
+  devtool: 'source-map',
   output: {
     filename: 'bundle.js',
     path: DIST_DIR
@@ -22,15 +22,16 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader"
-            // query: {
-            //   modules: true,
-            //   localIdentName: '[name]__[local]___[hash:base64:5]'
-            // }
-          }
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
         ]
       }
     ]
   }
-}
+};
