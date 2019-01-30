@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const inquiries = require('../database');
 const findInquiryAndUpdate = require('../database/controllers/inquiry.js');
@@ -26,6 +27,15 @@ app.post('/inquiries', (req, res) => {
       res.send(data);  // Status code defualts to 200 (OK)
     }
   });
+});
+
+app.get('/*', (request, response) => {
+  response.sendFile(path.resolve(__dirname, '../client/dist/index.html'));
+});
+
+// FIXME: This does not work! :(
+app.get('/projects/*', (request, response) => {
+  response.sendFile(path.resolve(__dirname, '../client/dist/index.html'));
 });
 
 app.listen(PORT, () => {
