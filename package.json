@@ -9,7 +9,6 @@
     "node": "8.11.1"
   },
   "scripts": {
-    "heroku-postbuild": "cd Seek-A-Design && npm install --only=dev && npm install && npm run build",
     "react-dev": "webpack -d --watch",
     "start": "node server/index.js",
     "start-dev": "nodemon server/index.js",
