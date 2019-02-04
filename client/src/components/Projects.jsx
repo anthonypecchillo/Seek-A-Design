@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 
-import Topic from './topic.jsx';
+import Topic from './Topic.jsx';
 
 const Projects = ({ match }) => (
   <div>
