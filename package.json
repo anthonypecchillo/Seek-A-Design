@@ -9,7 +9,7 @@
     "node": "8.11.1"
   },
   "scripts": {
-    "postinstall": "webpack -p",
+    "postinstall": "webpack -d",
     "react-dev": "webpack -d --watch",
     "start": "node server/index.js",
     "start-dev": "nodemon server/index.js",
