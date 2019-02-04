@@ -11,15 +11,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // React Router Demo ----------------------------------------------------------
 import { Route, Switch } from "react-router-dom";
 
-import Header from './Header.jsx';
+// import Header from './Header.jsx';
 
-import Home from './Home.jsx';
-import Projects from './Projects.jsx';
-import About from './About.jsx';
-import Contact from './Contact.jsx';
-import Topic from './Topic.jsx';
-import Always from './Always.jsx';
-import NoMatch from './NoMatch.jsx';
+// import Home from './Home.jsx';
+// import Projects from './Projects.jsx';
+// import About from './About.jsx';
+// import Contact from './Contact.jsx';
+// import Topic from './Topic.jsx';
+// import Always from './Always.jsx';
+// import NoMatch from './NoMatch.jsx';
+import UnderConstruction from './UnderConstruction.jsx';
 // ----------------------------------------------------------------------------
 
 
@@ -88,8 +89,6 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header />
-
         {/*
         React Router v4.x.x Notes:
         --------------------------
@@ -125,17 +124,21 @@ class App extends React.Component {
         Use the "Modal Gallery" example to create a modal image gallery with proper 
         routing for the Projects page sub routes! (Hard!)
        */}
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route component={Always} /> {/*Not necessary in this case - just an example.*/}
-          <Route component={NoMatch} /> {/*404 Component Here!*/}
-        </Switch>
+        <UnderConstruction />
       </div>
     );
   }
 }
 
 export default App;
+
+// <Header />
+
+// <Switch>
+//   <Route exact path="/" component={Home} />
+//   <Route path="/projects" component={Projects} />
+//   <Route path="/about" component={About} />
+//   <Route path="/contact" component={Contact} />
+//   <Route component={Always} /> {/*Not necessary in this case - just an example.*/}
+//   <Route component={NoMatch} /> {/*404 Component Here!*/}
+// </Switch>
