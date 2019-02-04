@@ -6,7 +6,8 @@ const inquiries = require('../database');
 const findInquiryAndUpdate = require('../database/controllers/inquiry.js');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 8000;
+console.log('PORT IS: ', PORT);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
