@@ -9,7 +9,7 @@
     "node": "8.11.1"
   },
   "scripts": {
-    "heroku-postbuild": "webpack -p",
+    "postinstall": "webpack -p",
     "react-dev": "webpack -d --watch",
     "start": "node server/index.js",
     "start-dev": "nodemon server/index.js",
